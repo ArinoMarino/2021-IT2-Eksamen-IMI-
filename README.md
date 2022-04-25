@@ -4,3 +4,4 @@
 ## Doing funny stuff
 
 ##Tehe ;)
+Mange kokker, mye søl
