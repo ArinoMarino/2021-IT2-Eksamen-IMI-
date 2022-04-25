@@ -1,0 +1,13 @@
+.elementer{
+    display: flex;
+    flex-direction: row;
+}
+
+.element{
+    margin: auto;
+}
+
+.form{
+    display: none;
+    margin: auto;
+}
