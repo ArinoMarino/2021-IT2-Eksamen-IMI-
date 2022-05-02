@@ -71,8 +71,8 @@ const DNAMap = new Map([
 buttonEl.addEventListener('click', ()=>{
 	const dna = dnaInEl.value;
 
-	if(dna.toUpperCase().match(/[^ACTG]/g)) outEl.innerHTML = 'DNA-sekvensen inneholder ugyldige tegn'
-	if(dna.length % 3 != 0) outEl.innerHTML = 'DNA-sekvensen inneholder feil antall tegn'
+	if(dna.toUpperCase().match(/[^ACTG]/g)) return outEl.innerHTML = 'DNA-sekvensen inneholder ugyldige tegn'
+	if(dna.length % 3 != 0) return outEl.innerHTML = 'DNA-sekvensen inneholder feil antall tegn'
 
 	try{
 		const dnaArray = dna.toUpperCase().split(/(?=(?:[ACTG]{3})+$)/).map(e=>{
